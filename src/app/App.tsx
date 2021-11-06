@@ -15,7 +15,7 @@ function App(): JSX.Element {
           <BackgroundVideo file="src/app/components/assets/horror.mp4" />
           <main className={styles.container}>
             <div className={styles.logo}>
-              <Logo fill="#fff" />
+              <Logo fill="#fff" width={750} />
             </div>
           </main>
         </Route>
