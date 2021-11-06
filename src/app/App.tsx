@@ -1,5 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import BackgroundVideo from './components/BackgroundVideo/BackgroundVideo';
+import Logo from './components/Logo/Logo';
+import styles from './App.module.css';
 
 function App(): JSX.Element {
   return (
@@ -9,7 +12,12 @@ function App(): JSX.Element {
           <main>About</main>
         </Route>
         <Route path="/">
-          <main>Home</main>
+          <BackgroundVideo file="src/app/components/assets/horror.mp4" />
+          <main className={styles.container}>
+            <div className={styles.logo}>
+              <Logo fill="#fff" />
+            </div>
+          </main>
         </Route>
       </Switch>
     </BrowserRouter>
